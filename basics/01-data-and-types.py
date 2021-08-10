@@ -2,6 +2,7 @@ import platform
 import importlib
 
 striking_string = importlib.import_module("00-beauty-of-python").__getattribute__('striking_string')
+bucket = importlib.import_module("magics").__getattribute__('bucket')
 
 
 EXPLAIN = f"""
@@ -35,13 +36,41 @@ Knowledge Point 1: All data are just numbers,
                    It's confusing at first but in fact, 'A' is just {striking_string(ord('A'), line_sep='')}.
                    We call 'A' as a type of char.
 
->> You may curious, what about apple? Are they the accumulated numbers?
+
+>> You may curious, what about a word of "apple"? Are they the accumulated numbers?
 Knowledge Point 2: Actually we call "apple" a string, just 
                    to regard it as a sequence as letter(number) placed continuously.
                    Shown as follows: {striking_string([ord(letter) for letter in "apple"], 
                                                       color='yellow', line_sep='')}.
 
 
+>> Also, you must curious about how to hold a pile of "apple" just as how to put 10 iPhone in to a bucket.
+Knowledge Point 3: This is just a relationship between items and placeholder(aka. container).
+                   You put many basic items in to an item-container.
+                   You can also put as many as strings as you want in Python, it's quite simple!
+                   SEE THAT EXAMPLE:
+                   Let's assume you have 7 iPhone:
+                   >> iPhone_3 = 'iPhone 3'
+                   >> iPhone_4 = 'iPhone 3GS'
+                   >> iPhone_5 = 'iPhone 4'
+                   >> iPhone_6 = 'iPhone 4S'
+                   >> iPhone_7 = 'iPhone 5'
+                   >> iPhone_8 = 'iPhone 5C'
+                   >> iPhone_9 = 'iPhone 6'
+                   >> iPhone_10 = 'iPhone 7'
+                   Let's put all these iPhones into our market bucket!
+                   >> bucket = list()
+                   >> bucket.append(iPhone_3)
+                   >> bucket.append(iPhone_4)
+                   >> bucket.append(iPhone_5)
+                   >> bucket.append(iPhone_6)
+                   >> bucket.append(iPhone_7)
+                   >> bucket.append(iPhone_8)
+                   >> bucket.append(iPhone_9)
+                   >> bucket.append(iPhone_10)
+                   Let's print the bucket out!
+                   >> print(bucket)
+                   {striking_string(bucket, color='green', line_sep='')}
 """
 
 
