@@ -6,6 +6,7 @@ bucket = importlib.import_module("magics").__getattribute__('bucket')
 magic_delete_last_of_bucket = importlib.import_module("magics").__getattribute__('magic_delete_last_of_bucket')
 face_to_name = importlib.import_module("magics").__getattribute__('mapping')
 persons = importlib.import_module("magics").__getattribute__('persons')
+water_mapping = importlib.import_module("magics").__getattribute__('water_mapping')
 
 
 PERSON_INFO_DICT = """'person_de_bucket': [],
@@ -16,6 +17,8 @@ PERSON_INFO_DICT = """'person_de_bucket': [],
 
 
 EXPLAIN = f"""
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 Data types are the most basics of computer science, because all of the known theory
 so called as "Information Tech" are bound to be stored in somewhere subjected to some structure.
 
@@ -191,13 +194,14 @@ Knowledge Point 5: Nested Structure!!!
                    Well, its super easy too.
                    
                    >> face_to_name[1] = 'Water'  #  and that's all of it
-                   >> {striking_string(face_to_name[1], color='yellow', line_sep='')}
+                   >> {striking_string(water_mapping(face_to_name), color='yellow', line_sep='')}
                    
                    {striking_string("*** So, let's go back to 'HOW TO GET THE FIRST PERSON'S GENDER?'", color='red', 
                                     line_sep='')}
                    {striking_string("*** This is today's homework, please try to figure it out!", color='red', 
                                     line_sep='')}
-                   
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 """
 
 

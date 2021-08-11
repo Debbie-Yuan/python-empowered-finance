@@ -34,6 +34,12 @@ def magic_delete_last_of_bucket(buc: list) -> list:
 
 mapping = {1: 'Peter', 2: 'Debbie'}
 
+
+def water_mapping(map_: dict):
+    map_[1] = 'Water'
+    return 'Water'
+
+
 persons = [{
         'person_de_bucket': [],
         'person_de_name': 'Debbie',
