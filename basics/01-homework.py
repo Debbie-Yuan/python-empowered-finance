@@ -14,7 +14,7 @@ def write_your_answer_here():
     _ = "How to get the first person's gender?"
     gender = None
     # Implement your code here:
-    gender = persons[0]['person_de_gender']
+    
     # Your Implementation.
     return gender
 
