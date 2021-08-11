@@ -22,5 +22,4 @@ def write_your_answer_here():
 if __name__ == '__main__':
     color, message = ('green', 'Well done, perfectly correct!') \
         if write_your_answer_here() == 'little boy' else ('red', 'Emmmmm, Not correct')
-    print(message)
-    striking_string(message, color=color)
+    print(striking_string(message, color=color))
