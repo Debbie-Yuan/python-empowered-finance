@@ -1,4 +1,5 @@
 import importlib
+from typing import Optional
 
 striking_string = importlib.import_module("00-beauty-of-python").__getattribute__('striking_string')
 
@@ -10,16 +11,16 @@ persons = [{
     }]
 
 
-def write_your_answer_here():
+def write_your_answer_here() -> Optional[str]:
     _ = "How to get the first person's gender?"
     gender = None
-    # Implement your code here:
-    
+    # TODO Implement your code here:
+
     # Your Implementation.
     return gender
 
 
 if __name__ == '__main__':
     color, message = ('green', 'Well done, perfectly correct!') \
-        if write_your_answer_here() == 'little boy' else ('red', 'Emmmmm, Not correct')
+        if write_your_answer_here() == 'little boy' else ('red', 'Emmmmm, Not correct。。。')
     print(striking_string(message, color=color))
