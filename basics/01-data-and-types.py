@@ -93,13 +93,13 @@ Knowledge Point 3: This is just a relationship between items and placeholder(aka
                    a man telling you(CPU) where(address of real value in memory) is the restaurant to get a meal.
                    
                    In the next step, you used append method of list to append some variables into the container:
-                   This works like this, you arrived restaurant, and you are about to pickup whatever you like into 
-                   a small bucket. Every time you want to add something you want to eat, you have to ask for the 
+                   This works like, you arrived restaurant, and you are about to pickup whatever you like into 
+                   a small basket. Every time you want to add something you want to eat, you have to ask for the 
                    service man for "where you guys put my favourite fish?? or SA NIAO NIU WAN??". They tell you an 
                    address, you go to the address, pick up the food you want to eat, and back to the service man, 
                    loop until you found it enough to eat.
                    
-                   At last, at the cashier, the service man print a receipt for you to check.
+                   Last at the cashier, the service man print a receipt for you to check.
      
                    
 >> OK, Now you are at home, how to take out a phone?
